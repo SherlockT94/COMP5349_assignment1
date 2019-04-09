@@ -42,7 +42,7 @@ public class RateReducer extends Reducer<Text, Text, Text, Text> {
 
 		int sum = term.size();
 		int numVid = vid.size();
-		rate = (float)sum/numVid;
+		rate = (float)sum/(float)numVid;
 		DecimalFormat df = new DecimalFormat("#.##");
 		result.set(df.format(rate).toString());
 		context.write(key, result);
