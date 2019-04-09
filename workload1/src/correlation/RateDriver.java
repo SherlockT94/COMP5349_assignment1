@@ -22,7 +22,6 @@ public class RateDriver {
 		job.setJarByClass(RateDriver.class);//Set the Jar by finding where a given class came from.
 		job.setMapperClass(RateMapper.class);
 		job.setReducerClass(RateReducer.class);
-		job.setCombinerClass(RateReducer.class);
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(Text.class);
 		TextInputFormat.addInputPath(job, new Path(otherArgs[0]));
