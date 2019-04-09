@@ -38,5 +38,6 @@ public class RateMapper extends Mapper<Object, Text, Text, Text> {
 
 		categoryKey.set(category);
 		value.set(vc);
+		context.write(categoryKey, value);
 	}
 }
