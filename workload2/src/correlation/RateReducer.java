@@ -40,7 +40,7 @@ public class RateReducer extends Reducer<Text, Text, Text, Text> {
 			}
 		}
 
-		rate = term.size()/vid.size();
+		rate = (float) term.size()/vid.size();
 		DecimalFormat df = new DecimalFormat("#.##");
 		result.set(df.format(rate).toString());
 		context.write(key, result);
