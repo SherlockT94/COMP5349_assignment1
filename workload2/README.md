@@ -1,4 +1,4 @@
-#Running the Jar file
+# Running the Jar file
 spark-submit  \
 --class ml.TrendingVideoAnalysis \
 --master yarn \
