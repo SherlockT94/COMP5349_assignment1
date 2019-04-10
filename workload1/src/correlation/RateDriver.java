@@ -18,7 +18,7 @@ public class RateDriver {
 			System.exit(2);
 		}
 		Job job = new Job(conf, "tag owner inverted list with combiner");
-		job.setNumReduceTasks(3);
+		job.setNumReduceTasks(1);
 		job.setJarByClass(RateDriver.class);//Set the Jar by finding where a given class came from.
 		job.setMapperClass(RateMapper.class);
 		job.setReducerClass(RateReducer.class);
