@@ -115,7 +115,7 @@ public class TrendingVideoAnalysis{
 		List<String> top10 = finalResults.take(10);
 	    JavaRDD<String> finalTop10 = sc.parallelize(top10);
 			
-	    finalTop10.coalesce(1).saveAsTextFile(outputDataPath + "latest.rating.avg.per.genre");//save the output
+	    finalTop10.coalesce(1).saveAsTextFile(outputDataPath);//save the output
 	    sc.close();//close the spark context
 	  }
 }
