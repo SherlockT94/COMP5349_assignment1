@@ -4,4 +4,4 @@ if [ $# -ne 2 ]; then
     exit 1
 fi
 ant -buildfile build.xml
-spark-submit --class videodisrate.VideoDislikeRating --master yarn --deploy-mode cluster --num executors 3 videomaxdislike.jar $1 $2
+spark-submit --class ml.TrendingVideoAnalysis --master yarn --deploy-mode cluster --num-executors 3 sparkML.jar $1 $2

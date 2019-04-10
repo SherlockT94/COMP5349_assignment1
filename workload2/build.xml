@@ -4,7 +4,7 @@
     <property name="classes.dir" value="classes"/>
     <property environment="env"/>
     <path id ="spark-classpath">
-        <fileset dir="${env.SPARK_HOME}/jars">
+		<fileset dir="/usr/lib/spark/jars">
                 <include name="*.jar"/>
         </fileset > 
 
