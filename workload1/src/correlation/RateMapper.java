@@ -22,6 +22,10 @@ public class RateMapper extends Mapper<Object, Text, Text, Text> {
 		String vid = dataArray[0];
 		String country = dataArray[11];
 		String vc = vid + "," + country;
+		//filter the header
+		if(category.equals("category")){
+			return;
+		}
 
 		categoryKey.set(category);
 		value.set(vc);

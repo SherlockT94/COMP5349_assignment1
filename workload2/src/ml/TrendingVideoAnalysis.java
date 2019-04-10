@@ -39,7 +39,7 @@ public class TrendingVideoAnalysis{
 	   
 	    JavaSparkContext sc = new JavaSparkContext(conf);//SparkContext
 	    
-	    JavaRDD<String> rawData = sc.textFile(inputDataPath+"AllVideos_short.csv").filter(s -> !s.contains("video_id"));//read file and filter the header
+	    JavaRDD<String> rawData = sc.textFile(inputDataPath).filter(s -> !s.contains("video_id"));//read file and filter the header
 
 	    //read ratings.csv and convert it to a key value pair RDD of the following format
 		//video_id, trending_date, likes, dislikes, country
