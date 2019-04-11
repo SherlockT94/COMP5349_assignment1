@@ -1,4 +1,4 @@
-# comp5349cc_selfrepository
+# comp5349_Assignment1
 
 #Navigate to the program folder and Use the following command to run the project:
 
